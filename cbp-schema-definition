@@ -1,0 +1,263 @@
+{
+  "@context": "https://schema.org",
+  "@type": "EPIC-WIN-Pro-CBP-Format", // (EPIC Comprehensive Brand Profile)"
+  "name": "Brand Name",
+  "logo": "https://www.example.com/brandlogo.png", 
+  "slogan": "Brand Slogan",
+  "industry": "Industry",
+  "niche": "Niche",
+  "url": "https://www.example.com", 
+  "contact": { 
+    "info": "brandinfo@example.com",
+    "sales": "sales@example.com",
+    "misc": "contact@example.com",
+    "pointOfContact": "clientpoc@example.com"
+  },
+  "periodicals": [ 
+    {
+      "title": "Periodical Title 1",
+      "type": "Newsletter", // Options: Blog/Vlog/Newsletter/Zine/Podcast
+      "publishedDates": "Every Wednesday", // Or "1st and 15th"
+      "url": "https://www.example.com/periodical-1"  
+    }
+    // ... more periodicals 
+  ],
+	"links": {
+  "donationsURL": "https://www.example.com/donations",
+  "productsURL": "https://www.example.com/products",
+  "signupURL": "https://www.example.com/signup"
+		},
+  "styleAndTone": {
+  "style": {
+    "formality": {
+      "value": 0.5, // Example value: adjust as needed (0 to 1)
+      "descriptor": "balanced" // Options: informal, semi-formal, balanced, semi-casual, formal
+    },
+    "perspective": {
+      "value": 0,  // Example value: adjust as needed (0 or 1)
+      "descriptor": "thirdPerson" // Options: thirdPerson, firstPerson
+    },
+    "complexity": {
+      "value": 0.75, // Example value: adjust as needed (0 to 1)
+      "descriptor": "semi-complex" // Options: simple, straightforward, balanced, semi-complex, complex
+    },
+    "objectivity": {
+      "value": 0.25, // Example value: adjust as needed (0 to 1)
+      "descriptor": "semi-subjective" // Options: subjective, somewhat subjective, balanced, somewhat objective, objective
+    },
+    "urgency": {
+      "value": 0.8, // Example value: adjust as needed (0 to 1)
+      "descriptor": "urgent" // Options: casual, relaxed, balanced, prompt, urgent
+    }
+  },
+  "tone": {
+    "seriousness": {
+      "value": -0.5, // Example value: adjust as needed (-1 to 1)
+      "descriptor": "lighthearted" // Options: playful, lighthearted, neutral, serious, somber
+    },
+    "positivity": {
+      "value": 0.9, // Example value: adjust as needed (-1 to 1)
+      "descriptor": "uplifting" // Options: critical, skeptical, neutral, optimistic, uplifting
+    },
+    "enthusiasm": {
+      "value": 0.2, // Example value: adjust as needed (-1 to 1)
+      "descriptor": "calm" // Options: reserved, calm, neutral, enthusiastic, passionate
+    },
+    "respect": {
+      "value": 0.6, // Example value: adjust as needed (-1 to 1)
+      "descriptor": "polite" // Options: casual, familiar, polite, respectful, reverent
+    },
+    "sophistication": {
+      "value": 0.4, // Example value: adjust as needed (-1 to 1)
+      "descriptor": "approachable" // Options: folksy, approachable, neutral, refined, sophisticated
+    }
+  },
+  "pervue": {
+    "topicsOfInterest": ["topic1", "topic2",  /* Up to 5 */ ],  
+    "subtopics": ["subtopic1", "subtopic2",  /* Up to 5 */ ],
+	},  
+    "format": "Terse formatting description here",    
+    "bylineFormat": "Byline structure (e.g., Author Name | Date)", 
+    "bylineStyle": { 
+      "fontFamily": "Arial", 
+      "fontSize": "12px", 
+      "color": "#666666" 
+      // ... more CSS properties
+    },
+    "brandStylePreset": {
+      // Specify a chosen Style Preset here (optional) Definition of the five presets below
+    },
+    "overrides": {
+      // Users can place overrides to preset styles here 
+    },
+    "advancedFormatting": { 
+      // Users can place custom CSS here
+    }
+  }
+// ** End Standard CBP Data **
+  
+// ** Room for Custom Extensibility **
+  
+// ** Format Preset Definitions **
+       "brandStylePresets": {
+"Classic": {
+    "typography": {
+      "headlineFont": { 
+        "fontFamily": "Garamond, serif", 
+        "color": "#222222", 
+        "fontSize": "1.2em", // Flexible size 
+        "fontWeight": "bold" 
+      },
+      "paragraphFont": { /* ... */ }, 
+      "linkFont": { /* ... */ }
+    },
+    "linkDecoration": "underline", 
+    "bulletIcon": "disc", 
+    "roundness": "5px", 
+    "boxShadow": "2px 2px 5px rgba(0,0,0,0.2)", 
+    "lineSpacing": "1.7",
+        "margins": "15px",
+        "justification": "left",
+        "hyphenation": "none",
+        "kerning": "normal",
+        "advancedFormatting": {
+          "a:hover": { 
+            "textDecoration": "underline" 
+          },
+          "p": {
+            "letterSpacing": "0.05em" // Example of 'slightly wider' tracking
+          }
+ 
+  }, 
+      "Minimalist": {
+        "typography": {
+          "headlineFont": {
+            "fontFamily": "Open Sans, sans-serif",
+            "color": "#222222",
+            "fontSize": "1.3em",
+            "fontWeight": "600"
+          },
+          "paragraphFont": {
+            "fontFamily": "Open Sans, sans-serif", 
+            "color": "#222222", 
+            "fontSize": "1.3em",
+            "fontWeight": "600"
+          },
+          "linkFont": {
+            "fontFamily": "Roboto, sans-serif",
+            "color": "#007BFF",
+            "fontWeight": "500"
+          }
+        },
+        "linkDecoration": "none", 
+        "bulletIcon": "none",
+        "roundness": "0px",
+        "boxShadow": "none",
+        "lineSpacing": "1.7",
+        "margins": "15px",
+        "justification": "left",
+        "hyphenation": "none",
+        "kerning": "normal",
+        "advancedFormatting": {
+          "a:hover": { 
+            "textDecoration": "underline" 
+          },
+          "p": {
+            "letterSpacing": "0.05em" // Example of 'slightly wider' tracking
+          }
+        }
+      },
+      "Technical": {
+        "typography": {
+          "headlineFont": {
+            "fontFamily": "Courier New, Courier, monospace",
+            "color": "#111111",
+            "fontSize": "1.1em",
+            "fontWeight": "400"
+          },
+          "paragraphFont": { 
+            "fontFamily": "Courier New, Courier, monospace",
+            "color": "#111111",
+            "fontSize": "1.1em",
+            "fontWeight": "400" 
+          },
+          "linkFont": { 
+            "fontFamily": "Courier New, Courier, monospace", 
+            "color": "#111111", 
+            "fontSize": "1.1em",
+            "fontWeight": "400"
+          } 
+        },
+        "linkDecoration": "underline", 
+        "bulletIcon": "square",
+        "roundness": "2px",
+        "boxShadow": "inset 1px 1px 3px rgba(0,0,0,0.1)",
+        "lineSpacing": "1.5",
+        "margins": "10px",
+        "justification": "left",
+        "hyphenation": "none",
+        "kerning": "normal",
+        "tracking": "normal"
+      }
+    }
+        },
+      "Modern": {
+          "typography": {
+            "headlineFont": { 
+              "fontFamily": "Helvetica Neue, Helvetica, sans-serif",
+              "color": "#333333",
+              "fontSize": "1.5em",
+              "fontWeight": "700"
+            },
+            /* ... paragraphFont, linkFont */ 
+          },
+          "linkDecoration": "none",
+          "bulletIcon": "circle",
+          "roundness": "3px",
+          "boxShadow": "1px 2px 3px rgba(0,0,0,0.1)",
+          "lineSpacing": "1.6",
+          "margins": "20px",
+          "justification": "left",
+          "hyphenation": "auto",
+          "kerning": "normal",
+          "tracking": "normal"
+        },
+          }
+  }
+}   
+   "Expressive": {
+    "typography": {
+      "headlineFont": { 
+        "fontFamily": "Impact, sans-serif", 
+        "color": "linear-gradient(#FF0000, #FFFF00)", 
+        "fontSize": "2em", 
+        "fontWeight": "900", 
+        "textTransform": "uppercase" 
+      },
+      /* ... other fonts */
+    },
+    "linkDecoration": "none",
+          "bulletIcon": "circle",
+          "roundness": "3px",
+          "boxShadow": "1px 2px 3px rgba(0,0,0,0.1)",
+          "lineSpacing": "1.6",
+          "margins": "20px",
+          "justification": "left",
+          "hyphenation": "auto",
+          "kerning": "normal",
+          "tracking": "normal"
+        },
+  
+    "bulletIcon": "cross", 
+    "margins": "extraWide", // You'll need to define this  
+    "advancedFormatting": {
+      "h1::before": {
+        "content": "'😄 😄'"
+      },
+      "h1::after": {
+        "content": "'😄 😄'"
+      },
+      /* ... add emoji rules for paragraphs */ 
+    } 
+  }
+}
